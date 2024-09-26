@@ -3,7 +3,7 @@ class Solution:
 
         for i in range(len(nums)):
             answer = target - nums[i]
-            for j in range(i,len(nums)):
+            for j in range(i+1,len(nums)):
                 if nums[j] == answer:
                     return [i,j]
-                
+                 
